@@ -11,7 +11,7 @@ const configureIdentityProvider = () => {
   const adminEmails = process.env.ADMIN_EMAIL_ADDRESS?.split(",").map((email) =>
     email.toLowerCase().trim()
   );
-
+/*
   if (process.env.AUTH_GITHUB_ID && process.env.AUTH_GITHUB_SECRET) {
     providers.push(
       GitHubProvider({
@@ -27,7 +27,7 @@ const configureIdentityProvider = () => {
       })
     );
   }
-
+*/
   if (
     process.env.AZURE_AD_CLIENT_ID &&
     process.env.AZURE_AD_CLIENT_SECRET &&
